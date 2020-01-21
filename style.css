@@ -68,6 +68,8 @@ html {
 
 body {
 	margin: 0;
+	background: aliceblue;
+	min-width: 1200px;
 }
 
 /**
@@ -610,6 +612,11 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+#site-navigation {
+	display: flex;
+	justify-content: center;
+	background: lightblue;
+}
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -636,6 +643,14 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+#masthead {
+	background: lightskyblue;
+}
+
+.page_item {
+	margin: 0px 10px;
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -832,9 +847,34 @@ a:hover, a:active {
 	max-width: 100%;
 }
 
+.widget-area {
+	width: 20%;
+	min-width: 240px;
+}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+#content {
+	display: flex;
+	justify-content: space-around;
+	margin: 25px 0px;
+}
+
+#primary {
+	width: 60%;
+	min-width: 720px;
+}
+
+#primary, .widget-area {
+	background: lightsteelblue;
+	padding: 8px;
+}
+
+#colophon {
+	padding-top: 50px;
+	background: lightskyblue;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
