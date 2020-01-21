@@ -828,12 +828,6 @@ a:hover, a:active {
 	/* Make sure select elements fit in widgets. */
 }
 
-.widget-area {
-	position: relative;
-	width: 25%;
-	right: 100%;
-}
-
 .widget select {
 	max-width: 100%;
 }
