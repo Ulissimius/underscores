@@ -20,7 +20,7 @@ get_header();
 					<script>
 						var i = 0
 						const container = document.getElementById('anim-404')
-						const h1404 = document.getElementById('display-404')
+						const h1404 = document.getElementsByClassName('display-404')
 						console.log(h1404)
 						const arr = ['4','0','4']
 
