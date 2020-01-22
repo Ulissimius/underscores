@@ -19,9 +19,10 @@ get_header();
 
 					<script>
 						var i = 0
-						var container = document.getElementById('anim-404')
-						var h1404 = document.getElementById('display-404')
-						var arr = ['4','0','4']
+						const container = document.getElementById('anim-404')
+						const h1404 = document.getElementById('display-404')
+						console.log(h1404)
+						const arr = ['4','0','4']
 
 						setTimeout(animate404, 1000)
 
