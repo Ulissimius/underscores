@@ -36,6 +36,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Content
 	## Posts and pages
 	## Comments
+	## 404 page
 # Infinite scroll
 # Media
 	## Captions
@@ -874,6 +875,13 @@ a:hover, a:active {
 #colophon {
 	padding-top: 50px;
 	background: lightskyblue;
+}
+
+/*--------------------------------------------------------------
+## 404 page
+--------------------------------------------------------------*/
+#anim-404 {
+	text-align: center;
 }
 /*--------------------------------------------------------------
 ## Posts and pages
