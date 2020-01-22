@@ -15,7 +15,7 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<div id="anim-404"><h1 class="display-404" style="font-size: 12px"></h1></div>
+					<div id="anim-404"><h1 class="display-404" style="font-size: medium"></h1></div>
 
 					<script>
 						var i = 0
@@ -30,14 +30,14 @@ get_header();
 							i++
 							setTimeout(animate404, 1500)
 							} else {
-								// setInterval(function grow404() {
-								// 	if (h1404.style.fontSize < 40) {
-								// 		h1404.style.fontSize += 1
-								// 	} else {
-								// 		return
-								// 	}
-								// }, 100)
-								h1404.style.fontSize += 50
+								setInterval(function grow404() {
+									// if (h1404.style.fontSize  {
+										h1404.style.transition = "font-size 2s"
+										h1404.style.fontSize = "x-large" 
+									// } else {
+										return
+									// }
+								}, 100)
 							}
 						}
 					</script>
