@@ -15,7 +15,7 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<div id="anim-404"><h1 class="display-404" style="font-size: medium"></h1></div>
+					<div id="anim-404"><h1 class="display-404" style="font-size: 24px"></h1></div>
 
 					<script>
 						var i = 0
@@ -24,21 +24,27 @@ get_header();
 						const arr = ['4','0','4']
 
 						setTimeout(animate404, 1000)
+
 						function animate404() {
 							if (i != 3) {
-							h1404.innerHTML += arr[i]
-							i++
-							setTimeout(animate404, 1500)
+								h1404.innerHTML += arr[i]
+								i++
+								setTimeout(animate404, 1500)
 							} else {
+								h1404.style.transition = "font-size 2s"
 								setInterval(function grow404() {
-									// if (h1404.style.fontSize  {
-										h1404.style.transition = "font-size 2s"
-										h1404.style.fontSize = "x-large" 
-									// } else {
+									if (h1404.style.fontSize < "200px")  {
+										h1404.style.fontSize = findFontSize(h1404) + 1 + "px" 
+									} else {
 										return
-									// }
+									}
 								}, 100)
 							}
+						}
+
+						function findFontSize(h1) {
+							var a
+							return a = parseInt(h1.style.fontSize.slice(0, h1.style.fontSize.length-2))
 						}
 					</script>
 
