@@ -24,13 +24,13 @@ get_header();
 						console.log(h1404)
 						const arr = ['4','0','4']
 
-						//setTimeout(animate404, 1000)
+						setTimeout(animate404, 1000)
 						animate404()
 						function animate404() {
 							if (i == 3) { return }
 							h1404.innerHTML += arr[i]
 							i++
-							//setTimeout(animate404, 1000)
+							setTimeout(animate404, 1000)
 						}
 					</script>
 
