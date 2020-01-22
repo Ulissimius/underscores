@@ -15,21 +15,30 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<div id="anim-404"><h1 class="display-404"></h1></div>
+					<div id="anim-404"><h1 class="display-404" style="font-size: 12px"></h1></div>
 
 					<script>
 						var i = 0
-						const container = document.getElementById('anim-404')
+						// const container = document.getElementById('anim-404')
 						const h1404 = document.querySelector('.display-404')
 						console.log(h1404)
 						const arr = ['4','0','4']
 
-						setTimeout(animate404, 5000)
+						setTimeout(animate404, 1000)
 						function animate404() {
-							if (i == 3) { return }
+							if (i != 3) {
 							h1404.innerHTML += arr[i]
 							i++
-							setTimeout(animate404, 5000)
+							setTimeout(animate404, 1500)
+							} else {
+								setInterval(function grow404() {
+									if (h1404.style.fontSize < 40) {
+										h1404.style.fontSize += 1
+									} else {
+										return
+									}
+								}, 100)
+							}
 						}
 					</script>
 
