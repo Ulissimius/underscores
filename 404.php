@@ -31,7 +31,7 @@ get_header();
 								i++
 								setTimeout(animate404, 1500)
 							} else {
-								h1404.style.transition = "font-size 2s"
+								// h1404.style.transition = "font-size 2s"
 								setInterval(function grow404() {
 									if (h1404.style.fontSize < "200px")  {
 										console.log(h1404.style.fontSize)
