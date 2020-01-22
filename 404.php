@@ -31,14 +31,14 @@ get_header();
 								i++
 								setTimeout(animate404, 1500)
 							} else {
-								// h1404.style.transition = "font-size 2s"
-								setInterval(function grow404() {
+								h1404.style.transition = "font-size 10s"
+								// setInterval(function grow404() {
 									if (findFontSize(h1404) < 200)  {
-										h1404.style.fontSize = String(findFontSize(h1404) + 1 + "px")
+										h1404.style.fontSize = String(findFontSize(h1404) + 200 + "px")
 									} else {
 										return
 									}
-								}, 100)
+								// }, 100)
 							}
 						}
 
