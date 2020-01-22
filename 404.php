@@ -34,7 +34,9 @@ get_header();
 								h1404.style.transition = "font-size 2s"
 								setInterval(function grow404() {
 									if (h1404.style.fontSize < "200px")  {
-										h1404.style.fontSize = findFontSize(h1404) + 1 + "px" 
+										console.log(h1404.style.fontSize)
+										h1404.style.fontSize = String(findFontSize(h1404) + 1 + "px")
+										console.log(h1404.style.fontSize) 
 									} else {
 										return
 									}
