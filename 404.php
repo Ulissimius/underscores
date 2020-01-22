@@ -15,6 +15,24 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
+					<div id="anim-404"><h1 class="display-404"></h1></div>
+
+					<script>
+						var i = 0
+						var container = document.getElementById('anim-404')
+						var h1404 = document.getElementById('display-404')
+						var arr = ['4','0','4']
+
+						setTimeout(animate404, 1000)
+
+						function animate404() {
+							if (i == 3) { return }
+							h1404.innerHTML += arr[i]
+							i++
+							setTimeout(animate404, 1000)
+						}
+					</script>
+
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mathew' ); ?></h1>
 				</header><!-- .page-header -->
 
@@ -57,5 +75,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
