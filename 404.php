@@ -25,7 +25,6 @@ get_header();
 						const arr = ['4','0','4']
 
 						setTimeout(animate404, 5000)
-						animate404()
 						function animate404() {
 							if (i == 3) { return }
 							h1404.innerHTML += arr[i]
