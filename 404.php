@@ -46,7 +46,7 @@ get_header();
 						function background404() {
 							var wallpaper = document.querySelector("body")
 
-							wallpaper.style.backgroundImage = "url('assets/images/broken_link.png')"
+							wallpaper.style.backgroundImage = "url('<?php bloginfo('template_directory'); ?>assets/images/broken_link.png')"
 							wallpaper.style.backgroundSize = "100px auto"
 							wallpaper.style.backgroundRepeat = "repeat"
 						}
