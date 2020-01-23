@@ -25,6 +25,7 @@ get_header();
 
 						setTimeout(animate404, 444)
 						background404()
+						revealInfo()
 
 						function animate404() {
 							if (i != 3) {
@@ -57,7 +58,7 @@ get_header();
 							divShow.style.display = "hide"
 							
 							setTimeout(revealInfoDelay, 7500)
-							
+
 							function revealInfoDelay() {
 								divShow.style.display = "block"
 							}
