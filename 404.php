@@ -24,6 +24,7 @@ get_header();
 						const arr = ['4','0','4']
 
 						setTimeout(animate404, 1000)
+						background404()
 
 						function animate404() {
 							if (i != 3) {
@@ -40,6 +41,12 @@ get_header();
 						function findFontSize(h1) {
 							var a
 							return a = parseInt(h1.style.fontSize.slice(0, h1.style.fontSize.length-2))
+						}
+
+						function background404() {
+							var wallpaper = document.getElementById("content")
+
+							wallpaper.style.backgroundImage = "url('assets/images/broken_link.png')"
 						}
 					</script>
 

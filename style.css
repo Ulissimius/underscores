@@ -886,6 +886,8 @@ a:hover, a:active {
 
 .display-404 {
 	margin: 0px;
+	line-height: 100%;
+	background-image: url();
 }
 /*--------------------------------------------------------------
 ## Posts and pages
