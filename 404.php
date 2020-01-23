@@ -15,7 +15,7 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<div id="anim-404"><h1 class="display-404" style="font-size: 24px"></h1></div>
+					<div id="anim-404"><h1 class="display-404" style="font-size: 48px"></h1></div>
 
 					<h1 class="page-title page-title-404"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mathew' ); ?></h1>
 				</header><!-- .page-header -->
@@ -74,7 +74,7 @@ get_header();
 				i++
 				setTimeout(animate404, 444)
 			} else {
-				h1404.style.transition = "font-size linear 6s"
+				h1404.style.transition = "font-size linear 4s"
 				h1404.style.fontSize = String(findFontSize(h1404) + 200 + "px")
 				return
 			}
