@@ -99,7 +99,7 @@ get_header();
 			divShow.style.display = "none"
 			divShow.style.height = "0px"
 			
-			setTimeout(revealInfoDelay, 8000)
+			setTimeout(revealInfoDelay, 6000)
 
 			function revealInfoDelay() {
 				divShow.style.transition = "all linear 2s"
