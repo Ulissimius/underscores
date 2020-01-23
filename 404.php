@@ -101,7 +101,7 @@ get_header();
 			setTimeout(revealInfoDelay, 8000)
 
 			function revealInfoDelay() {
-				divShow.style.transition = "display linear 2s"
+				divShow.style.transition = "all linear 2s"
 				divShow.style.display = "block"
 			}
 		}
