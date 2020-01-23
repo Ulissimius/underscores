@@ -17,54 +17,6 @@ get_header();
 				<header class="page-header">
 					<div id="anim-404"><h1 class="display-404" style="font-size: 24px"></h1></div>
 
-					<script>
-						var i = 0
-						// const container = document.getElementById('anim-404')
-						const h1404 = document.querySelector('.display-404')
-						const arr = ['4','0','4']
-
-						setTimeout(animate404, 444)
-						background404()
-						revealInfo()
-
-						function animate404() {
-							if (i != 3) {
-								h1404.innerHTML += arr[i]
-								i++
-								setTimeout(animate404, 444)
-							} else {
-								h1404.style.transition = "font-size linear 6s"
-								h1404.style.fontSize = String(findFontSize(h1404) + 200 + "px")
-								return
-							}
-						}
-
-						function findFontSize(h1) {
-							var a
-							return a = parseInt(h1.style.fontSize.slice(0, h1.style.fontSize.length-2))
-						}
-
-						function background404() {
-							const wallpaper = document.querySelector("body")
-
-							wallpaper.style.backgroundImage = "url('<?php bloginfo('template_directory'); ?>/assets/images/broken_link.png')"
-							wallpaper.style.backgroundSize = "100px auto"
-							wallpaper.style.backgroundRepeat = "repeat"
-						}
-
-						function revealInfo() {
-							const divShow = document.querySelector(".page-content")
-
-							divShow.style.display = "none"
-							
-							setTimeout(revealInfoDelay, 7500)
-
-							function revealInfoDelay() {
-								divShow.style.display = "block"
-							}
-						}
-					</script>
-
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mathew' ); ?></h1>
 				</header><!-- .page-header -->
 
@@ -106,5 +58,53 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<script>
+		var i = 0
+		// const container = document.getElementById('anim-404')
+		const h1404 = document.querySelector('.display-404')
+		const arr = ['4','0','4']
+
+		setTimeout(animate404, 444)
+		background404()
+		revealInfo()
+
+		function animate404() {
+			if (i != 3) {
+				h1404.innerHTML += arr[i]
+				i++
+				setTimeout(animate404, 444)
+			} else {
+				h1404.style.transition = "font-size linear 6s"
+				h1404.style.fontSize = String(findFontSize(h1404) + 200 + "px")
+				return
+			}
+		}
+
+		function findFontSize(h1) {
+			var a
+			return a = parseInt(h1.style.fontSize.slice(0, h1.style.fontSize.length-2))
+		}
+
+		function background404() {
+			const wallpaper = document.querySelector("body")
+
+			wallpaper.style.backgroundImage = "url('<?php bloginfo('template_directory'); ?>/assets/images/broken_link.png')"
+			wallpaper.style.backgroundSize = "100px auto"
+			wallpaper.style.backgroundRepeat = "repeat"
+		}
+
+		function revealInfo() {
+			const divShow = document.querySelector('.page-content')
+
+			divShow.style.display = "none"
+			
+			setTimeout(revealInfoDelay, 7500)
+
+			function revealInfoDelay() {
+				divShow.style.display = "block"
+			}
+		}
+	</script>
+	
 <?php
 get_footer();
