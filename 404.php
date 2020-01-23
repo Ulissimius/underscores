@@ -30,7 +30,7 @@ get_header();
 							if (i != 3) {
 								h1404.innerHTML += arr[i]
 								i++
-								setTimeout(animate404, 1500)
+								setTimeout(animate404, 444)
 							} else {
 								h1404.style.transition = "font-size linear 6s"
 								h1404.style.fontSize = String(findFontSize(h1404) + 200 + "px")
@@ -44,11 +44,23 @@ get_header();
 						}
 
 						function background404() {
-							var wallpaper = document.querySelector("body")
+							const wallpaper = document.querySelector("body")
 
 							wallpaper.style.backgroundImage = "url('<?php bloginfo('template_directory'); ?>/assets/images/broken_link.png')"
 							wallpaper.style.backgroundSize = "100px auto"
 							wallpaper.style.backgroundRepeat = "repeat"
+						}
+
+						function revealInfo() {
+							const divShow = document.querySelector(".page-content")
+
+							divShow.style.display = "hide"
+							
+							setTimeout(revealInfoDelay, 7500)
+							
+							function revealInfoDelay() {
+								divShow.style.display = "block"
+							}
 						}
 					</script>
 
