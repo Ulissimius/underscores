@@ -23,7 +23,7 @@ get_header();
 						const h1404 = document.querySelector('.display-404')
 						const arr = ['4','0','4']
 
-						setTimeout(animate404, 1000)
+						setTimeout(animate404, 444)
 						background404()
 
 						function animate404() {
@@ -32,7 +32,7 @@ get_header();
 								i++
 								setTimeout(animate404, 1500)
 							} else {
-								h1404.style.transition = "font-size linear 10s"
+								h1404.style.transition = "font-size linear 6s"
 								h1404.style.fontSize = String(findFontSize(h1404) + 200 + "px")
 								return
 							}
