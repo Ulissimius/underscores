@@ -98,9 +98,10 @@ get_header();
 
 			divShow.style.display = "none"
 			
-			setTimeout(revealInfoDelay, 7500)
+			setTimeout(revealInfoDelay, 8000)
 
 			function revealInfoDelay() {
+				divShow.style.transition = "display linear 2s"
 				divShow.style.display = "block"
 			}
 		}
