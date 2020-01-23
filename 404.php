@@ -47,6 +47,8 @@ get_header();
 							var wallpaper = document.getElementById("content")
 
 							wallpaper.style.backgroundImage = "url('assets/images/broken_link.png')"
+							wallpaper.style.backgroundSize = "100px auto"
+							wallpaper.style.backgroundRepeat = "repeat"
 						}
 					</script>
 
