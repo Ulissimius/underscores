@@ -44,7 +44,7 @@ get_header();
 						}
 
 						function background404() {
-							var wallpaper = document.getElementById("content")
+							var wallpaper = document.querySelector("body")
 
 							wallpaper.style.backgroundImage = "url('assets/images/broken_link.png')"
 							wallpaper.style.backgroundSize = "100px auto"
