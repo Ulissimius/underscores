@@ -102,7 +102,7 @@ get_header();
 			setTimeout(revealInfoDelay, 6000)
 
 			function revealInfoDelay() {
-				divShow.style.transition = "all 2s"
+				divShow.style.transition = "all 10s"
 				divShow.style.display = "block"
 				divShow.style.maxHeight = "1000px"
 			}
