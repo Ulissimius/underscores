@@ -17,10 +17,10 @@ get_header();
 				<header class="page-header">
 					<div id="anim-404"><h1 class="display-404" style="font-size: 24px"></h1></div>
 
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mathew' ); ?></h1>
+					<h1 class="page-title page-title-404"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mathew' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<div class="page-content page-content-404">
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'mathew' ); ?></p>
 
 					<?php
@@ -105,6 +105,6 @@ get_header();
 			}
 		}
 	</script>
-	
+
 <?php
 get_footer();
