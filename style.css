@@ -876,6 +876,7 @@ a:hover, a:active {
 #colophon {
 	padding-top: 50px;
 	background: lightskyblue;
+	min-height: 100vh;
 }
 
 /*--------------------------------------------------------------
