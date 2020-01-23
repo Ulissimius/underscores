@@ -97,14 +97,14 @@ get_header();
 			const divShow = document.querySelector('.page-content')
 
 			divShow.style.display = "none"
-			divShow.style.height = "0px"
+			divShow.style.maxHeight = "0px"
 			
 			setTimeout(revealInfoDelay, 6000)
 
 			function revealInfoDelay() {
-				divShow.style.transition = "height 2s"
+				divShow.style.transition = "all 2s"
 				divShow.style.display = "block"
-				divShow.style.height = "auto"
+				divShow.style.maxHeight = "1000px"
 			}
 		}
 	</script>
