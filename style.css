@@ -71,6 +71,7 @@ body {
 	margin: 0;
 	background: aliceblue;
 	min-width: 1200px;
+	min-height: 100vh;
 }
 
 /**
