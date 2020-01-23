@@ -55,7 +55,7 @@ get_header();
 						function revealInfo() {
 							const divShow = document.querySelector(".page-content")
 
-							divShow.style.display = "hide"
+							divShow.style.display = "none"
 							
 							setTimeout(revealInfoDelay, 7500)
 
