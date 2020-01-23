@@ -71,6 +71,7 @@ body {
 	margin: 0;
 	background: aliceblue;
 	min-width: 1200px;
+	background-image: url("assets/images/broken_link.png");
 }
 
 /**
