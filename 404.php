@@ -98,16 +98,15 @@ get_header();
 
 			divShow.style.overflow = "hidden"
 			// divShow.style.display = "none"
-			divShow.style.height = "0px"
+			divShow.style.height = "auto"
 			divShow.style.maxHeight = "0px"
 			
 			setTimeout(revealInfoDelay, 6000)
 
 			function revealInfoDelay() {
-				divShow.style.transition = "all 10s"
+				divShow.style.transition = "all 10s ease-out"
 				// divShow.style.display = "block"
 				divShow.style.maxHeight = "1000px"
-				divShow.style.height = "auto"
 			}
 		}
 	</script>
