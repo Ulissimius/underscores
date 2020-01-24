@@ -901,6 +901,11 @@ a:hover, a:active {
 .page-content-404, .page-title-404 {
 	text-align: center;
 }
+
+.widget-404-container {
+	display: flex;
+	justify-content: space-evenly;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

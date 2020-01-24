@@ -25,32 +25,37 @@ get_header();
 
 					<?php
 					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'mathew' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
+					<div class="widget-404-container">
+						<div class="widget-404-recent-posts">
+							<?php 
+							the_widget( 'WP_Widget_Recent_Posts' ); 
 							?>
-						</ul>
-					</div><!-- .widget -->
+						</div>
+						<div class="widget widget_categories">
+							<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'mathew' ); ?></h2>
+							<ul>
+								<?php
+								wp_list_categories( array(
+									'orderby'    => 'count',
+									'order'      => 'DESC',
+									'show_count' => 1,
+									'title_li'   => '',
+									'number'     => 10,
+								) );
+								?>
+							</ul>
+						</div><!-- .widget -->
+						<div class="widget-404-archive">
+							<?php
+							/* translators: %1$s: smiley */
+							$mathew_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'mathew' ), convert_smilies( ':)' ) ) . '</p>';
+							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$mathew_archive_content" );
 
-					<?php
-					/* translators: %1$s: smiley */
-					$mathew_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'mathew' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$mathew_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+							the_widget( 'WP_Widget_Tag_Cloud' );
+							?>
+						</div>
+					</div>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
