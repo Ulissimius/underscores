@@ -109,6 +109,11 @@ get_header();
 				divShow.style.maxHeight = "1000px"
 			}
 		}
+
+		function growContentDiv() {
+			divGrow = document.getElementById("primary")
+			divGrow.style.width = "75%"
+		}
 	</script>
 
 <?php
