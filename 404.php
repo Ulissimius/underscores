@@ -67,6 +67,7 @@ get_header();
 		setTimeout(animate404, 444)
 		background404()
 		revealInfo()
+		growContentDiv()
 
 		function animate404() {
 			if (i != 3) {
