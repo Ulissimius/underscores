@@ -32,7 +32,7 @@ get_header();
 							the_widget( 'WP_Widget_Recent_Posts' ); 
 							?>
 						</div>
-						<div class="widget widget_categories">
+						<div class="widget widget_categories widget-404-categories">
 							<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'mathew' ); ?></h2>
 							<ul>
 								<?php

@@ -906,6 +906,10 @@ a:hover, a:active {
 	display: flex;
 	justify-content: space-evenly;
 }
+
+.widget-404-recent-posts, .widget-404-categories {
+	border-right: solid black 2px;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
