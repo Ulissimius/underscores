@@ -907,13 +907,10 @@ a:hover, a:active {
 	justify-content: space-evenly;
 }
 
-.spacer-404 {
-	border-right: solid black 2px;
-}
-
-.spandiv {
-	height: 75%;
+.divider {
 	align-self: center;
+	background-color: black;
+	width: 2px;
 }
 /*--------------------------------------------------------------
 ## Posts and pages
