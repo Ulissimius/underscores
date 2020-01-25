@@ -32,6 +32,7 @@ get_header();
 							the_widget( 'WP_Widget_Recent_Posts' ); 
 							?>
 						</div>
+						<span class="spacer-404"></span>
 						<div class="widget widget_categories widget-404-categories">
 							<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'mathew' ); ?></h2>
 							<ul>
@@ -46,6 +47,7 @@ get_header();
 								?>
 							</ul>
 						</div><!-- .widget -->
+						<span class="spacer-404"></span>
 						<div class="widget-404-archive">
 							<?php
 							/* translators: %1$s: smiley */

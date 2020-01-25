@@ -906,6 +906,12 @@ a:hover, a:active {
 	display: flex;
 	justify-content: space-evenly;
 }
+
+.spacer-404 {
+	height: 85%;
+	border-right: solid black 2px;
+	width: 1px;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
