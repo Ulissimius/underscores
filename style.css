@@ -908,9 +908,12 @@ a:hover, a:active {
 }
 
 .spacer-404 {
-	height: 85%;
 	border-right: solid black 2px;
-	width: 1px;
+}
+
+.spandiv {
+	height: 75%;
+	align-self: center;
 }
 /*--------------------------------------------------------------
 ## Posts and pages
