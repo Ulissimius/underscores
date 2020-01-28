@@ -57,7 +57,18 @@ if ( ! function_exists( 'mathew_setup' ) ) :
 			'comment-list',
 			'gallery',
 			'caption',
-			'post-formats',
+		) );
+
+		add_theme_support( 'post-formats', array( 
+			'aside', 
+			'chat', 
+			'gallery', 
+			'image', 
+			'link', 
+			'quote', 
+			'status', 
+			'video', 
+			'audio' 
 		) );
 
 		// Set up the WordPress core custom background feature.
