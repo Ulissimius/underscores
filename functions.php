@@ -57,6 +57,7 @@ if ( ! function_exists( 'mathew_setup' ) ) :
 			'comment-list',
 			'gallery',
 			'caption',
+			'post-formats',
 		) );
 
 		// Set up the WordPress core custom background feature.
