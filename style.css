@@ -620,7 +620,12 @@ textarea {
 #site-navigation {
 	display: flex;
 	justify-content: center;
-	background: lightblue;
+	background: rgba(92, 168, 194, .8);
+}
+
+.center-wrapper {
+	display: flex;
+	justify-content: center;
 }
 /*--------------------------------------------------------------
 ## Links
