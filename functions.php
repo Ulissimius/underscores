@@ -59,6 +59,7 @@ if ( ! function_exists( 'mathew_setup' ) ) :
 			'caption',
 		) );
 
+		//
 		add_theme_support( 'post-formats', array( 
 			'aside', 
 			'chat', 
@@ -70,6 +71,16 @@ if ( ! function_exists( 'mathew_setup' ) ) :
 			'video', 
 			'audio' 
 		) );
+
+		//Add custom header
+		add_theme_support('custom-header', apply_filters('mathew_custom_header.args', array(
+			'default-image' => '',
+			'default-text-color' => '000000',
+			'width' => 1000,
+			'height' => 250,
+			'flex-height' => true,
+			'wp-head-callback' => 'mathew_header_style',
+		)))
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'mathew_custom_background_args', array(
