@@ -79,6 +79,9 @@ if ( ! function_exists( 'mathew_setup' ) ) :
 			'width' => 1000,
 			'height' => 250,
 			'flex-height' => true,
+			'backgroundRepeat' => 'no-repeat',
+			'backgroundSize' => '100% 100%',
+			'backgroundImage' => 'style=background-image: url("<?php header_image(); ?>");',
 			'wp-head-callback' => 'mathew_header_style',
 		)));
 
