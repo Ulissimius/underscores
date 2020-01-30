@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mathew' ); ?></a>
 
-	<header id="masthead" class="site-header" src="<?php header_image(); ?>" height='<?php echo get_custom_header()->height; ?>' width='<?php echo get_custom_header()->width; ?>'>
+	<header id="masthead" class="site-header" style='background-image: url("<?php header_image(); ?>")' height='<?php echo get_custom_header()->height; ?>' width='<?php echo get_custom_header()->width; ?>'>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
