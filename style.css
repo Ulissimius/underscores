@@ -621,7 +621,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 	width: auto;
-	background: rgba(92, 168, 194, .8);
+	background: rgba(0, 0, 0, 0.65);
 }
 
 .center-wrapper {
