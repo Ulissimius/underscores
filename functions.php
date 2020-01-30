@@ -80,7 +80,7 @@ if ( ! function_exists( 'mathew_setup' ) ) :
 			'height' => 250,
 			'flex-height' => true,
 			'wp-head-callback' => 'mathew_header_style',
-		)))
+		)));
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'mathew_custom_background_args', array(
