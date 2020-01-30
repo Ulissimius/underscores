@@ -646,13 +646,25 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-## Menus
+## Header
 --------------------------------------------------------------*/
 #masthead {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
+.site-title a, .site-title a:visited {
+	color: white;
+}
+
+.site-description {
+	color: white;
+}
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
 .page_item {
 	margin: 0px 10px;
 }
